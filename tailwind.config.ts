@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				greeting: {
+					blue: "#3B82F6",
+					green: "#10B981",
+					coral: "#F87171",
+					purple: "#8B5CF6",
+					yellow: "#FBBF24",
+					teal: "#14B8A6"
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'flip': {
+					'0%, 100%': { transform: 'rotateY(0deg)' },
+					'50%': { transform: 'rotateY(180deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'flip': 'flip 1s ease-in-out'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'sans-serif'],
+				'serif': ['Playfair Display', 'serif'],
+				'handwriting': ['Pacifico', 'cursive']
 			}
 		}
 	},
